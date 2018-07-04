@@ -1,0 +1,521 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/lightwood">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="644dp"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context="com.example.shubham.Smarthut"
+
+
+
+
+
+
+
+            android:clickable="false">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="WELCOME TO HALL"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginBottom="15dp" />
+
+            <ToggleButton
+
+                android:id="@+id/t1hall"
+                android:checked="false"
+
+                android:textOff="OFF"
+                android:textOn="ON"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp"
+
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_below="@+id/textView"
+                android:layout_toLeftOf="@+id/textView"
+                android:layout_toStartOf="@+id/textView" />
+
+            <ToggleButton
+
+
+                android:id="@+id/t2hall"
+                android:layout_alignBottom="@+id/t1hall"
+                android:layout_centerHorizontal="true"
+
+                android:checked="false"
+
+                android:textOff="OFF"
+                android:textOn="ON"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp"
+
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"/>
+
+            <ToggleButton
+
+                android:id="@+id/b1hall"
+                android:layout_below="@+id/textView"
+                android:layout_toRightOf="@+id/textView"
+                android:layout_toEndOf="@+id/textView"
+                android:checked="false"
+                android:text="FAN"
+                android:textOff="OFF"
+                android:textOn="ON"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp"
+
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="tubelight-1"
+                android:id="@+id/tv1hall"
+                android:layout_below="@+id/t1hall"
+                android:layout_alignLeft="@+id/t1hall"
+                android:layout_alignStart="@+id/t1hall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="tubelight-2"
+                android:id="@+id/tv2hall"
+                android:layout_below="@+id/t2hall"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="bulb-1"
+                android:id="@+id/tv3hall"
+                android:layout_below="@+id/b1hall"
+                android:layout_alignLeft="@+id/b1hall"
+                android:layout_alignStart="@+id/b1hall"
+                android:layout_marginLeft="15dp" />
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:background="@android:color/black"
+
+                android:translationZ="20dp"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:id="@+id/view"
+                android:layout_below="@+id/tv1hall"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp" />
+
+            <ToggleButton
+
+                android:text="New ToggleButton"
+                android:id="@+id/f1hall"
+                android:layout_below="@+id/view"
+                android:layout_alignLeft="@+id/tv1hall"
+                android:layout_alignStart="@+id/tv1hall"
+                android:checked="false"
+                android:textColor="#FFFFFF"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_marginTop="5dp"
+                              />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:id="@+id/f1s1h"
+                android:layout_alignBottom="@+id/f1hall"
+                android:layout_toRightOf="@+id/f1hall"
+                android:layout_toEndOf="@+id/f1hall"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:id="@+id/f1s2h"
+                android:layout_alignBottom="@+id/f1hall"
+                android:layout_toRightOf="@+id/f1s1h"
+                android:layout_toEndOf="@+id/f1s1h"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:id="@+id/f1s3h"
+                android:layout_alignBottom="@+id/f1hall"
+                android:layout_toRightOf="@+id/f1s2h"
+                android:layout_toEndOf="@+id/f1s2h"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:id="@+id/f1s4h"
+                android:layout_alignBottom="@+id/f1hall"
+                android:layout_toRightOf="@+id/f1s3h"
+                android:layout_toEndOf="@+id/f1s3h"
+                android:checked="false" />
+
+            <ToggleButton
+
+                android:text="New ToggleButton"
+                android:id="@+id/b2halll"
+                android:layout_alignBottom="@+id/f1hall"
+                android:layout_alignLeft="@+id/b1hall"
+                android:layout_alignStart="@+id/b1hall"
+                android:textColor="#FFFFFF"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_marginTop="5dp"
+                android:checked="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Fan-1"
+                android:id="@+id/tv4hall"
+                android:layout_below="@+id/f1s1h"
+                android:layout_alignLeft="@+id/f1hall"
+                android:layout_alignStart="@+id/f1hall"
+                android:layout_marginLeft="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Bulb-2"
+                android:id="@+id/tv5hall"
+                android:layout_below="@+id/b2halll"
+                android:layout_alignLeft="@+id/b2halll"
+                android:layout_alignStart="@+id/b2halll"
+                android:layout_marginLeft="18dp" />
+
+            <ToggleButton
+
+                android:text="New ToggleButton"
+                android:id="@+id/f2hall"
+                android:layout_below="@+id/tv4hall"
+                android:layout_alignLeft="@+id/f1hall"
+                android:layout_alignStart="@+id/f1hall"
+                android:textColor="#FFFFFF"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_marginTop="5dp"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:id="@+id/f2s1h"
+                android:layout_alignBottom="@+id/f2hall"
+                android:layout_toRightOf="@+id/f2hall"
+                android:layout_toEndOf="@+id/f2hall"
+                android:checked="false"
+                android:layout_marginBottom="2dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:id="@+id/f2s2h"
+                android:layout_alignBottom="@+id/f2s1h"
+                android:layout_toRightOf="@+id/f2s1h"
+                android:layout_toEndOf="@+id/f2s1h"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:id="@+id/f2s3h"
+                android:layout_alignBottom="@+id/f2s2h"
+                android:layout_alignLeft="@+id/f1s3h"
+                android:layout_alignStart="@+id/f1s3h"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:id="@+id/f2s4h"
+                android:checked="false"
+                android:layout_alignTop="@+id/f2s3h"
+                android:layout_toLeftOf="@+id/tv5hall"
+                android:layout_toStartOf="@+id/tv5hall" />
+            <View
+                android:layout_width="150dp"
+                android:layout_height="1dp"
+                android:background="@android:color/black"
+
+                android:translationZ="20dp"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:id="@+id/view1"
+                android:layout_alignBottom="@+id/tv5hall"
+                android:layout_alignRight="@+id/f1s4h"
+                android:layout_alignEnd="@+id/f1s4h"
+                android:layout_marginBottom="2dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Fan-2"
+                android:id="@+id/tv6hall"
+                android:layout_below="@+id/f2hall"
+                android:layout_alignLeft="@+id/tv4hall"
+                android:layout_alignStart="@+id/tv4hall" />
+
+            <ToggleButton
+
+                android:text="New ToggleButton"
+                android:id="@+id/toggleButton3"
+                android:layout_alignBottom="@+id/f2hall"
+                android:layout_toRightOf="@+id/f2s4h"
+                android:layout_toEndOf="@+id/f2s4h"
+                android:textColor="#FFFFFF"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_marginTop="5dp"
+
+                />
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:background="@android:color/black"
+
+                android:translationZ="20dp"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:id="@+id/view3"
+                android:layout_below="@+id/tv6hall"
+                android:layout_alignLeft="@+id/f2hall"
+                android:layout_alignStart="@+id/f2hall" />
+
+            <ToggleButton
+
+                android:text="New ToggleButton"
+                android:id="@+id/powerachall"
+                android:layout_below="@+id/view3"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+
+                android:layout_width="75dp"
+                android:layout_height="60dp"
+                android:background="@drawable/powerbutton"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="4"
+                android:shadowDy="-4"
+                android:shadowRadius="0"
+                android:layout_marginTop="5dp"
+                android:checked="false"
+                android:clickable="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:elegantTextHeight="false"
+                android:enabled="false"
+                android:textOff="OFF"
+                android:textOn="ON" />
+
+            <Button
+
+                android:text="MODE"
+                android:id="@+id/modeachall"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:background="@drawable/modebuttonac"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="4"
+                android:shadowDy="-4"
+                android:shadowRadius="0"
+                android:checked="false"
+                android:layout_below="@+id/tv8hall"
+                android:layout_alignLeft="@+id/tv2hall"
+                android:layout_alignStart="@+id/tv2hall" />
+
+            <Button
+
+                android:text="-"
+                android:id="@+id/minusachall"
+                android:layout_alignBottom="@+id/modeachall"
+                android:layout_toLeftOf="@+id/modeachall"
+                android:layout_toStartOf="@+id/modeachall"
+                android:checked="false"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:background="@drawable/minusac"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="4"
+                android:shadowDy="-4"
+                android:shadowRadius="0"
+                android:layout_marginRight="2dp" />
+
+            <Button
+
+                android:text="+"
+                android:id="@+id/plusachall"
+                android:layout_alignBottom="@+id/modeachall"
+                android:layout_toRightOf="@+id/modeachall"
+                android:layout_toEndOf="@+id/modeachall"
+                android:checked="false"
+                android:textColor="#FFFFFF"
+
+
+                android:textSize="15sp"
+
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:background="@drawable/minusac"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="4"
+                android:shadowDy="-4"
+                android:shadowRadius="0"
+                android:layout_marginLeft="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="AC power"
+                android:id="@+id/tv8hall"
+                android:layout_below="@+id/powerachall"
+                android:layout_alignRight="@+id/modeachall"
+                android:layout_alignEnd="@+id/modeachall"
+                android:layout_marginRight="4dp" />
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:background="@android:color/black"
+
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:id="@+id/view4"
+                android:layout_below="@+id/modeachall"
+                android:layout_alignLeft="@+id/view3"
+                android:layout_alignStart="@+id/view3"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="temp"
+                android:id="@+id/temphall"
+                android:layout_alignBottom="@+id/plusachall"
+                android:layout_toRightOf="@+id/plusachall"
+                android:layout_toEndOf="@+id/plusachall"
+                android:textSize="12dp" />
+
+            <ToggleButton
+
+                android:text="New ToggleButton"
+                android:id="@+id/toggleButton"
+                android:layout_below="@+id/view4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="LOCK"
+                android:id="@+id/tv10hall"
+                android:layout_below="@+id/toggleButton"
+                android:layout_centerHorizontal="true" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

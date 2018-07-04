@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Smarthut</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="none_found">No devices found</string>
+    <string name="none_paired">No devices have been paired</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_device_list">DeviceListActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="gcm_defaultSenderId">762770711403</string>
+    <string name="google_app_id">AIzaSyA2rPSbGO75ZnCZHgsl9i-2WA1biw3Tmc4</string>
+    <string name="title_activity_registration">SmartHut</string>
+</resources>
